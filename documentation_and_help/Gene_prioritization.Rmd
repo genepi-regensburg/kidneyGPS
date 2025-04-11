@@ -1,0 +1,49 @@
+---
+title: "KidneyGPS Documentation and Help: Gene Prioritisation"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Gene Prioritisation (GPS) – How to Generate a List of Genes with Defined Properties
+
+The GPS tab in KidneyGPS comprises of three filter sections that can be utilized to restrict the displayed GPS table to genes and signals with specific properties
+#### Filtering sections
+1. 'Signal-filtering'
+
+	The first section enables to restrict the GPS table to signals with specific properties.
+   - Filter for the strength of statistical support: You can restrict to signals based on the posterior probability of association (PPA) of a signal’s credible set variants. Each credible set is thought to contain the variant causal for the association with a 99% probability. For instance, selecting PPA>99% will show signals containing only one credible set variant. PPA>50% indicates a high probability of one variant being causal, and PPA>10% excludes signals with only low probability variants. Alternatively, you can filter for signals with a small credible set of five or fewer variants. If the PPA filter and the small-set filter are selected, signals that meet one of these criteria are shown in the displayed GPS table. The 'no filter' option displays all signals.
+	
+   - Further filter options:
+     - You can restrict to signals that are validated for kidney function relevance based on eGFRcys or BUN associations.
+     - You can restrict to signals with different associations in individuals with vs. without diabetes, or signals associated with eGFR decline.
+ 
+2. 'Variant-to-gene mapping'
+
+   - The second section deals with variant-to-gene mapping. It allows you to restrict the GPS-view to genes that are mapped by a credible set variant with specific properties.
+
+   - Feature selection: Choose one blue or orange feature to restrict the GPS-view to genes mapped by a credible set variant with that specific property. When multiple options are selected genes with non-zero entries in any of the respective GPS columns will be shown.
+
+   - Additional mapping restrictions: If you choose any blue or orange feature, you can further restrict mapped credible set variants based on the strength of statistical support of the mapped variant itself. As in the first section, you can select PPA and small set criteria. If both PPA and small set criteria are chosen, the mapped variant must satisfy at least one of them; otherwise, the gene mapped by the variant is omitted from the GPS-view.
+
+   - To display all genes, regardless of variant-to-gene mapping, select the 'no filter' option. Note: These genes may not directly relate to kidney function and could simply be located in an eGFRcrea locus by chance.
+
+3. 'Gene-to-phenotype mapping'
+
+	The third section deals with gene-to-phenotype mapping. It allows you to restrict the GPS-view to genes with specific properties.
+
+   - Kidney phenotypes: Choose from two options to restrict the GPS-view to genes with either a kidney phenotype in mouse models or genes known to cause human genetic diseases with kidney phenotypes. If both options are selected, the gene must satisfy at least one of them.
+
+   - Drug information options: These options refer to drugs listed in the Therapeutic Target Database (TTD), separated by indications. One option filters genes targeted by drugs for any kidney disease, and the other filters genes targeted by drugs for other diseases or with unspecified indications.
+
+   - If multiple options are selected, genes must only satisfy one of the chosen criteria.
+
+
+#### The GPS Table
+
+By default, the displayed GPS Table is a full and comprehensive summary of the annotation for all 5,906 genes and 594 eGFRcrea signals. After applying “Signal-Filtering”, “Variant-to-gene mapping” or “Gene-to-phenotype mapping”, the displayed GPS Table shows the results of the respective data filtering. Blue and orange columns contain numbers representing the count of credible set variants targeting the respective gene through that specific feature. If a gene was located in a locus with multiple independent signals or was mapped by credible set variants from different association signals, multiple rows for that gene may be included.
+
+The number of genes meeting the filter criteria is displayed below the GPS Table.
+
+#### Step-by-step guide
+
+Find here a step-by-step guide with three examples: [step-by-step_guide_for_app.pdf](https://homepages.uni-regensburg.de/~wit59712/gps/step-by-step_guide_for_app.pdf)

@@ -1,0 +1,9 @@
+---
+title: "KidneyGPS Documentation and Help: Contact"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Contact
+
+If you have any questions not answered by the "Documentation & Help" section, please feel free to ask your question in this user forum: KidneyGPS at GitHub or contact: Prof. Dr. Iris Heid (iris.heid &#60;at&#62; klinik &#60;dot&#62; uni-regensburg &#60;dot&#62; de)

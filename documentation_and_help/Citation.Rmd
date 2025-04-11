@@ -1,0 +1,9 @@
+---
+title: "KidneyGPS Documentation and Help: Citation"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Citation
+
+Did you use KidneyGPS for a publication? We would appreciate if you cite us: "KidneyGPS: an easily accessible web application to prioritize kidney function genes and variants based on evidence from genome-wide association studies" and the original data sources appropriately.

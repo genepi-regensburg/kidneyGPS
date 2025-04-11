@@ -1,0 +1,40 @@
+---
+title: "KidneyGPS Documentation and Help: Release History"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Release history
+
+KidneyGPS 2.5.0 [2025-03] - added markdown for dokumentation and added colocalization with Nephv2 eQTLs
+
+KidneyGPS 2.4.0 [2025-02] - integrated decline loci from Wiegrebe et al., added eQTLs from NephQTL v2 and minor fixes
+
+KidneyGPS 2.3.1 [2023-09] - update of documentation page
+
+KidneyGPS 2.3.0 [2023-08] - integration of eGFR association statistics separated by diabetes status for all credible set variants.
+
+KidneyGPS 2.2.0 [2023-08] - re-organisation of the GPS tab with extendend filter options.
+
+KidneyGPS 2.1.0 [2023-07] - separated drug information by indication for kidney diseases according to the ICD-11 codes.
+
+KidneyGPS 2.0.1 [2023-07] - enable variant-search for chromosome and position (based on GRCh37).
+
+KidneyGPS 2.0.0 [2023-07] - reanalysis of the 424 loci regarding stability of independent signals. 594 stable independent signals were identified using stepwise conditioning with GCTA. Credible sets were re-calculated for these signals resulting in 35,885 credible set variants.
+
+KidneyGPS 1.3.1 [2023-02] - additional summary numbers in "GPS tab" below GPS table; in minor fixes
+
+KidneyGPS 1.3.0 [2022-11] - integration of drug target and interaction information for all genes from Therapeutic Target Database
+
+KidneyGPS 1.2.0 [2022-11] - integration of drug target and interaction information for all genes from Therapeutic Target Database
+
+KidneyGPS 1.2.0 [2022-10] - integration of ADTKD genes, DM-status interaction and eGFRcrea decline association; loosening of the CADD-Phred cutoff for protein-altering variants with a clear functional cosequence
+
+KidneyGPS 1.1.2 [2022-06] - small layout changes
+
+KidneyGPS 1.1.1 [2022-04] - minor fixes
+
+KidneyGPS 1.1.0 [2022-03]- integration of eQTL data from Susztaklab
+
+first publication KidneyGPS 1.0 [2022-03]
+

@@ -1,0 +1,23 @@
+---
+title: "KidneyGPS Documentation and Help: Privacy"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Privacy, data security an License
+
+We take the privacy and security of your data very seriously. Your input data is only used within the application to provide the intended functionality; your input data is not stored..
+
+Data Collection: Data Collection: We do not collect any user data, including IP addresses, searched genes, or variants within the RShiny application.
+
+Data Logging: We do not log any data queries or actions performed by users within the application.
+
+Data Sharing: We do not share any user data or information with third parties.
+
+Data Access: Only authorized personnel have access to the application's underlying infrastructure.
+
+<br>
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+This RShiny web-server is operated by the University of Regensburg. The full privacy policy can be viewed here: https://www.uni-regensburg.de/datenschutz/

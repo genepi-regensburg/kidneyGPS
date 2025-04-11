@@ -1,0 +1,75 @@
+---
+title: "KidneyGPS Documentation and Help: Data Sources"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Data Sources
+### Association with eGFRcrea
+Genetic loci and genes within these loci are based on a [genome-wide association studies (GWAS)](https://www.ukbiobank.ac.uk/) meta-analysis for eGFRcrea of [UK Biobank data](https://www.ukbiobank.ac.uk/) and [CKDGen consortium](https://ckdgen.imbi.uni-freiburg.de) data **(n=1,201,909).**  Detailed information on the selection process can be found  [here](https://www.nature.com/articles/s41467-021-24491-0). A GWAS meta-analysis restricted to individuals of European ancestry (**n=1,004,040**) was used to identify independent association signals and to calculate posterior probabilities of association (**PPA**) for all variants in each signal. The **99% credible set** of variants contains the causal variant with 99% probability, under the assumption that there is one causal variant per association signal and that this variant is included in the analysis.
+
+---
+
+### Association with other phenotypes
+#### eGFRcys & BUN</span>
+**GWAS meta-analyses** were also performed for eGFR estimated from serum cystatin C (**eGFRcys**, n=460,826) and blood urea nitrogen (**BUN**, n=852,678). KidneyGPS provides information on whether the **locus lead variant** (variant with the smallest association p-value in a locus) is **nominally significant** for eGFRcys or BUN with **concordant effect directions**. Summary statistics of these analyses can be downloaded [here](https://www.uni-regensburg.de/medizin/epidemiologie-praeventivmedizin/genetische-epidemiologie/gwas-summary-statistics/index.html).  
+#### Interaction with diabetes status  
+Diabetes mellitus (DM) is a risk factor for kidney failure. A GWAS meta-analysis for eGFRcrea conducted separatly for individuals with or without DM (*n*<sub>DM</sub> = 178,691, *n*<sub>noDM</sub> = 1,296,113) by Winkler et al. identified 7 loci with significant DM/noDM difference. 5 of these locis showed a more pronounced effect on eGFR in DM versus noDM (DM>NoDM), one locus had a DM-only effect and one locus a noDM-only effect. Further information on the impact of diabetes status on the genetic eGFRcrea effect sizes can be found in the original publication: [Winkler et al. Commun. Biol. 2022](https://www.nature.com/articles/s42003-022-03448-z). Variants identified by this study were mapped to eGFRcrea signals in KidneyGPS via overlap, or strong correlation with the signal index variant identified by Stanzick et al. 
+#### Association with eGFRcrea decline
+Progressive eGFR-decline can lead to kidney failure, necessitating dialysis or transplantation. Hence, [Gorski et al. *Kidney Int.* 2022](https://www.kidney-international.org/article/S0085-2538(22)00454-9/fulltext) searched for genetic association with annual eGFR-decline using 62 longitudinal studies in 343,339 individuals. Associated variants were identified by three approaches: First, a genome-wide screen on eGFR-decline unadjusted for eGFR-baseline revealed two significantly ( (*P*<sub>decline</sub> < 5 × 10<sup>-8</sup>) associated variants within the UMOD-PDILT locus.Second, a candidate approach among the 263 lead variants for eGFRcrea from [Wuttke et al. *Nat. Genet.* 2019](https://www.nature.com/articles/s41588-019-0407-x) identified two associated variants (Bonferroni corrected: (*P*<sub>decline</sub> < 0.05/263 = 1.90 × 10<sup>-4</sup>). Third, a genome-wide screen for association with eGFR-decline adjusted for eGFRcrea at baseline revealed five variants, that were also associated (Bonferroni corrected: (*P*<sub>decline</sub> < 4.17 × 10<sup>-3</sup>) with eGFRcrea decline unadjusted. The identified C15orf54 signal maps to a second signal in this locus and is thus not included in our GPS. We integrated these identified variants, when they resided in eGFRcrea signal or showed strong correlation with the signal index variant identified by Stanzick et al. We incorporated the loci identified by [Wiegrebe et al. *Nat. Commun.* 2024](https://pubmed.ncbi.nlm.nih.gov/39567532/). This study analyzed longitudinal UK Biobank data on creatinine-based estimated glomerular filtration rate (eGFR) from 348,275 individuals, identifying genetic variants associated with eGFR decline. The analysis was conducted both genome-wide and among 595 variants previously linked to eGFR in cross-sectional GWAS. Using a linear mixed model, the study identified 13 independent genetic variants associated with eGFR decline, including six novel variants, and highlighted their role in age-dependent eGFR genetics. 
+
+---
+
+### CADD
+ The combined annotation dependend depletion (CADD) score is a measurement of the deleteriousness of a genetic variant [Rentzsch et al. 2018]. By integrating multiple annotations, it contrasts variants that survived natural selection with simulated mutations. CADD evaluated ~8.6 billion SNPs and the CADD-Phred Score used on this website represents the rank of variant compared to all annotated variants. Variants with the coding and non-coding consequences "stop-gained", "stop-lost", "missense", "canonical splice", "noncoding change", "synonymous" or "splice-site" are not restricted regarding their CADD-Phred Score. Variants with "other" consequences are filtered for a CADD-Phred Score ≥ 15, which restricts our analysis to the 3.2% most deleterious variants. Further, the analysis is restricted to variants within the affected gene as overlap with eQTLs and sQTLs should be minimized to avoid overscoring particular genes and variants. For additional information regarding CADD, please vistit the [CADD website](https://cadd.gs.washington.edu/info).
+
+Used version: v1.6 [2020-03-23]
+
+---
+
+### eQTL and sQTL data  
+All credible variants were searched in expression quantitative trait loci (eQTL) databases. Three sources for eQTL data were used:
+
+#### NEPTUNE v2  
+ eQTL data from the NEPTUNE study [Gillies et al. 2018](https://www.sciencedirect.com/science/article/pii/S0002929718302313) and [Sampson et al. 2023](https://www.nature.com/articles/s41467-023-37691-7) includes cis- eQTLs, which are variants that influence expression of genes within a 1Mb region centred around the variant. The association between a variant and the expression of a gene was deemed to be significant if the false dicovery rate (FDR) was <0.05. This eQTL data was obtained from glomerular and tubulo-interstitial tissue. Further information about the NEPTUNE study can be found on the webpage of the [NephQTL v2 browser](https://hugeampkpn.org/research.html).
+
+Version from [2025-02-07]
+#### Susztaklab (Sheng et al.)
+
+The Susztaklab also provides comprehensive kidney omics data. We integrated the eQTL data from glomerular und tubulo-interstitial tissue published by [Sheng et al.](https://www.nature.com/articles/s41588-021-00909-9).
+#### GTEx
+
+In contrast to the other two eQTL sources, the GTEx project is not restricted to kidney tissue. Furthermore, additional splicing altering variants (sQTLs) were investigated. Thus, the here integrated GTEx data includes cis- eQTL and -sQTL information from 48 different tissues with a mapping window of 1Mb up- and downstream of the transcription start site [Auget et al. 2021]. Further information about GTEx can be found [here](https://www.gtexportal.org/home/).
+
+Used version: GTEx Release v7 [2017-09-05]
+
+---
+
+### Mouse phenotypes
+
+Information on genes with kidney-relevant phenotypes in mice origin from the Mouse Genome Informatics database (MGI,[Bult el al. 2018]). This includes all phenotypes subordinate to "abnormal kidney morphology" (MP:0002135) and "abnormal kidney physiology" (MP:0002136). Further information how this data was collected can be found on the [MGI webpage](http://www.informatics.jax.org).
+
+Version from [2020-06-03]
+
+---
+
+### Human phenotypes:
+
+We used three sources to identify genes causing genetic disorders with kidney phenotype in human:
+#### OMIM
+
+The Online Mendelian Inheritance in Man (OMIM) database [Hamosh et al. 2000] was queried for phenotype entries subordinate to the clinical synopsis class "kidney". Diseases with "kidney"-phenotype entries being: "normal kidneys", "normal renal ultrasound at ages 4 and 7 (in two family)", "no kidney disease", "no renal disease; normal renal function", "normal renal function; no kidney disease" and "no renal findings" were manually excluded. Be aware that OMIM entries missing a clinical synopsis entry are not included in kidneyGPS regardless of a potential kidney involvement. Further information on the diseases can be found at the [OMIM webpage](https://www.omim.org).
+
+Version from [2020-08-07]
+#### Groopman et al.
+
+A [list of 625 genes](http://www.columbiamedicine.org/divisions/gharavi/files/Kidney_Gene_List_625.xlsx) associated with Mendelian forms of kidney and genitourinary disease was published by Groopman et al. in 2019 in the New England Journal of Medicine. The original article "Diagnostic Utility of Exome Sequencing for Kidney Disease" can be found [here](https://www.nejm.org/doi/10.1056/NEJMoa1806891). Please notice that not all 625 genes are included in any eGFRcrea locus and thus cannot be found in kidneyGPS.
+#### Wopperer al.
+
+Autosomal Dominant Tubulointerstitial Kidney Disease (ADTKD) is a heriditary kidney-disease normaly caused by mutations in at least one of five genes ( UMOD, MUC1, REN, HNF1B, SEC61A1 ) and leads to kidney failure in midadulthood. However, Wopperer et al. (2022) identified 27 putative novel ADTKD genes, of which 9 are located within an eGFRcrea associated locus. Disease type of known ADTKD genes is stated as "confirmed ADTKD" in the "Kidney phenotypes in human" section and as "putative ADTKD" for the novel genes. The original publication can be found [here](https://www.kidney-international.org/article/S0085-2538(22)00384-2/fulltext).
+
+---
+
+### Drug information:
+
+Information on weather a gene, it's mRNA or the respective protein is a known drug target or interacts with a drug (e.g. as transporter) was downloaded from the Thearepeutic Target Database (TTD). "Highest drug status" and "disease/indication" refer to the drug and not necessarily to the shown target-drug pair. Additional information on TTD can be found in the related publication from [Ying Zhou et al. 2022](https://doi.org/10.1093/nar/gkab953). Drugs referring to kidney related indications were obtained using ICD-11 codes GB4'X' to GB9'X' 

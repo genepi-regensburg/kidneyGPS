@@ -1,0 +1,56 @@
+---
+title: "KidneyGPS Documentation and Help: Gene search"
+author: "Mathias Gorski"
+date: "Feb 15th 2025"
+output: html_document
+---
+# Gene Search
+The 'Genes' tab allows to search your gene(s) of interest. Information is available for the 5906 genes overlapping any eGFRcrea locus.
+### Search panel
+
+The left panel on the 'Genes' tab is the search panel. There are three options to start your search request
+
+1. The option 'Gene Name' allows to enter one gene name. KidneyGPS uses the official HGNC gene names and does only support a few synonyms.
+2. The option 'Paste a list of genes' allows to enter a bulk of gene names to search for. Allowed separators are spaces and all non-letter symbols except for hyphens ('-') as those can be part of a gene name.
+3. The option 'Choose txt file with a list of genes' allows to upload a txt-file with a list of gene names to search for. After selecting a file via the 'Browse..' button, the separator must be selected. This can be comma, semicolon, or tab. The 'reset' button deletes the uploaded file.
+
+The last clicked input field is automatically selected and only gene names in this field will be included in the search.
+
+### Specification panel
+
+Beside searching for all available information for a gene in KidneyGPS, the search results can be restricted or extended using the different options in the 'Specification' panel. The colored options are selected by default, so that each information supporting a genes relevance for kidney function will be shown. Unselect options if these should not be shown in the results. Additionally, you can restrict the shown resultsto genes that map to credible set variants above a user-define PPA threshold. The higher a variant's PPA, the more likely it is the causal variant for the association signal.
+
+### Search results
+
+After clicking 'GO' or pressing 'Enter' the search will be performed. First, an excerpt of the GPS Table will be shown for the searched genes that are located in an eGFR locus. A text will inform how many of the searched genes are included in KidneyGPS. How many functionally or regulatory relevant credible variants map to the searched gene is shown in the GPS Table. Details to these variants can be found below the GPS Table. If a PPA filter was selected only credible set variants meeting this criterion will be counted in the GPS Table.
+
+---
+
+# Variant Search
+### Search panel
+
+The left panel on the 'Variants' tab is the search panel. There are three options to start your search request. KidneyGPS supports RS-identifiers and genetic positions (format chr:position) from genomic build hg19.
+
+1. The option 'Single SNP search' allows to enter one variant.
+2. The option 'Paste a list of RSIDs' allows to enter a bulk of variants to search for. Allowed separators are spaces and all non-letter symbols.
+3. The option 'Choose txt file with a list of RSIDs' allows to upload a txt-file with a list of variants to search for. After selecting a file via the 'Browse..' button, the separator must be selected. This can be comma, semicolon, or tab. The 'reset' button deletes the uploaded file.
+
+
+### Search options
+
+Similar to the 'Gene search', search results can be restricted or extended using the search options. There is the possibility to search for eGFR association statistics in 'all ancestries', which will be displayed when a variant is genome-wide significant (in the all ancestry meta-analysis). In general, variants are searched for overlap with 99% credible set variants (selected from European-only meta-analysis; do not necessarily meet the genome-wide significane criterion). Additional functional information is available for these variants (coloured options) as well as association statistics separated by diabetes status and a regional association diagram for the locus containing the variant(s) being searched for.
+
+### Search results
+
+After clicking 'GO' or pressing 'Enter' the search will be performed. If the default options are selected and if the searched variants are genome-wide significant associated or credible set variants, the first two tables will display the association statistics. If the searched variant has functional consequences for a gene, this will be displayed below.
+
+---
+
+# Region Search
+### Search panel
+
+The tab 'Region' allows to search a region for overlapping eGFR association signals. The region can be defined by selection the chromosome and entering start- and end-postion of the region.
+
+### Search results
+
+After clicking 'GO' or pressing 'Enter' the search will be performed. If the searched region overlaps at least partly an eGFR locus, two results tables will be displayed. The first table shows the independent signals included in the overlapping eGFR locus. The second table is the GPS Table excerpt for those signals including all genes in the eGFR locus.
