@@ -1,0 +1,455 @@
+
+h3{
+  padding-right: 50px;
+  padding-bottom: 0px;
+  max-width: 50%;
+}
+
+a:visited {
+  color: purple;
+}
+
+.question{
+  color:grey;
+  height:20px;
+  width: 20px;
+  padding:1px ;
+  font-size: 10px;
+  border:2px solid grey;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+.go{
+  position: relative;
+  float: right;
+}
+
+#gpsgo {
+  font-weight: bold;
+  font-size: large;
+  border-width: thick;
+  border-color: #428c20;
+  border-radius: 10px;
+}
+
+#reset_variant,#reset_gene{
+  margin-top: -30px;
+}
+
+.Output_header{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#detail_evidence_locus_gene{
+  margin-top: -10px;
+  padding-top: -15px;
+}
+
+.CADD, #CADD_gene th, #CADD th, #CADD_snp_batch th, #CADD_gene_batch th{
+  background-color: #ccffff;
+}
+
+.CADD{
+  padding: 0px 4px;
+}
+
+.eqtl, #glo_gene th, #glo th, #glo_snp_batch th, #glo_gene_batch th, #tub_gene th , #tub th, #tub_snp_batch th, #tub_gene_batch th, #eqtl_gene th, #etql th, #eqtl_snp_batch th, #eqtl_gene_batch th, #sqtl_gene th, #sqtl th, #sqtl_snp_batch th, #sqtl_gene_batch th{
+  background-color: #ffdb99;
+}
+
+.eqtl{
+  padding: 0px 4px;
+}
+
+.pheno, #div_mgi_gene th, #mgi_gene_batch th,  #omim_gene th, #omim_gene_batch th{
+  background-color: #b3ffb3;
+}
+
+.pheno{
+  padding: 0px 4px;
+}
+
+.drug, #div_drug_gene_kid th, #div_drug_gene_oth th{
+  background-color: #d9b3ff;
+}
+
+.drug{
+  padding: 0px 4px;
+}
+/*#snp-label, #SNP_batch-label, #file1-label{
+  font-size: 16px;
+}
+*/
+
+.gwscredinputbox .shiny-options-group label{
+  font-size: 16px;
+  /*font-weight: bold;*/
+  padding-bottom: 4px;
+}
+
+.gwscredinputbox{
+  padding-top: 4px;
+}
+
+.snpinputbox, .snplocuszoom{
+  position: relative;
+  width: min(600px, calc(95% - 15px));
+  left: 20px;
+  top: -15px;
+}
+.snpinputbox .shiny-options-group .checkbox{
+  padding: 2px 4px;
+}
+
+.snplocuszoom .shiny-options-group .checkbox{
+  padding: 2px 4px;
+}
+
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(1){
+  background-color: #ccffff;
+}
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(2){
+  background-color: #ffdb99;
+}
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(3){
+  background-color: #ffdb99;
+}
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(4){
+  background-color: #ffdb99;
+}
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(5){
+  background-color: #ffdb99;
+}
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(6){
+  background-color: #ffdb99;
+}
+.snpinputbox .shiny-options-group .checkbox:nth-of-type(7){
+  background-color: #ffdb99;
+}
+
+
+
+
+#gpscontainermap, #gpscontainersignal, #gpscontainerfilter {
+ background-color: #f5f5f5;
+ min-height: 400px;
+ /*max-height: 1000px;*/
+ border: 1px solid #dddddd;
+ border-radius: 5px;
+ padding: 15px;
+ margin: 10px;
+}
+
+.gps-container {
+  display: flex;
+}
+
+/*.gps-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+}*/
+
+
+
+/* Moving the div to the right */
+#gpsppafilter {
+ margin-left: 15px;
+}
+
+#gpsmapppafilter {
+ margin-left: 15px;
+}
+
+
+/*#nofiltersignal, */
+#nofiltermap, #nofiltergenelist { /*i have no idea why this needs to be here, but it has to. */
+ *position: absolute;
+ bottom: 0;
+}
+
+#furthersignalfilter label {
+  font-weight: normal;
+}
+/*#nofiltersignal {
+ position: absolute;
+ bottom: 0;
+ margin-bottom: 5px;
+}*/
+#nofiltermap {
+ position: absolute;
+ border-top: 1px dashed grey; 
+ bottom: 0;
+ margin-bottom: 5px;
+ margin-top: 5px;
+ overflow-x: visible;
+}
+#nofiltergenelist {
+  border-top: 1px dashed grey; 
+ position: absolute;
+ bottom: 0;
+ margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #nofiltermap, #nofiltergenelist {
+    position: relative; /* Change to relative positioning for smaller screens */
+    bottom: auto; /* Remove bottom positioning for smaller screens */
+    margin-bottom: 5px; /* Adjust as needed for spacing on smaller screens */
+    overflow-x: hidden; /* Hide overflow for smaller screens if needed */
+  }
+}
+
+#GPS div.dataTables_wrapper {
+ position:relative;
+ overflow-x: scroll;
+}
+
+#DataTables_Table_0_length {
+ padding-right: 2px;
+ padding-left: 2px;
+ margin-right: 7px;
+ /*! margin-left: 3px; */
+}
+
+#ppafiltergenemap {
+  border-left: 1px dashed grey; 
+
+}
+.shiny-input-container:not(.shiny-input-container-inline) {
+ width: initial;
+ max-width: 100%
+}
+
+
+
+
+.Geneofficial, .Locusidwithcomment, .Signalidwithcomment, .validationwithcomment, .DMwithcomment, .declinewithcomment,.eQTLglowithcomment,.eQTLtubwithcomment, .PPA, .REF, .ALT, .CADDscore, .pos, .snpsearch, .maxPPA{
+  position: relative;
+  text-decoration: underline grey dotted; 
+}
+.Genecomment, .Locusidcomment, .Signalidcomment, .validationcomment, .DMcomment, .declinecomment, .PPAcomment, .REFcomment, .ALTcomment, .CADDscorecomment, .poscomment, .snpsearchcomment, .maxPPAcomment{
+  display:none;
+  position:absolute; 
+  z-index:1000000;
+  border:1px;
+  background-color:white;
+  border-style:solid;
+  border-width:1px;
+  border-color:grey;
+  padding:4px 4px;
+  border-radius: 6px;
+  font-weight: normal;
+  color:black; 
+  left: 105%; 
+  transform: translate(0, -60%);
+  text-align: center;
+}
+.eQTLglocomment,.eQTLtubcomment{
+  display:none;
+  position:absolute; 
+  z-index:1000000;
+  border:1px;
+  background-color:#ffdb99;
+  border-style:solid;
+  border-width:1px;
+  border-color:grey;
+  padding:4px 4px;
+  border-radius: 6px;
+  font-weight: normal;
+  color:black; 
+  left: 105%; 
+  transform: translate(0, -60%);
+  text-align: center;
+}
+.Geneofficial:hover span.Genecomment{
+  display:block;
+  min-width: 100%;
+  max-height: 95%;
+}
+
+.Locusidwithcomment:hover span.Locusidcomment{
+  display:block;
+  min-width: 100%;
+  max-height: 95%;
+}
+.Signalidwithcomment:hover span.Signalidcomment{
+  display:block;
+  width: 150px;
+  min-width: 100%;
+  max-height: 95%;
+}
+.validationwithcomment:hover span.validationcomment{
+  display:block;
+  width: 200%;
+  min-width: 100%;
+  max-width: 300%;
+  max-height: 85%;
+}
+
+.DMwithcomment:hover span.DMcomment{
+  display:block;
+  width: 200%;
+  min-width: 100%;
+  max-width: 300%;
+  max-height: 85%;
+}
+
+.declinewithcomment:hover span.declinecomment{
+  display:block;
+  width: 200%;
+  min-width: 100%;
+  max-width: 300%;
+  max-height: 85%;
+}
+
+.PPA:hover p.PPAcomment{
+  display:block;
+  width: 400%;
+  min-width: 100%;
+  max-height: 95%;
+} 
+
+.eQTLglowithcomment:hover span.eQTLglocomment{
+  display:block;
+  min-width: 100%;
+  max-height: 95%;
+}
+
+.eQTLtubwithcomment:hover span.eQTLtubcomment{
+  display:block;
+  min-width: 100%;
+  max-height: 95%;
+}
+
+.REF:hover span.REFcomment{
+  display:block;
+  min-width: 100%;
+  max-height: 95%;
+} 
+.ALT:hover span.ALTcomment{
+  display:block;
+  min-width: 100%;
+  max-height: 95%;
+}
+
+.CADDscore:hover span.CADDscorecomment{
+  display:block;
+  width: 170px;
+  min-width: 100%;
+  max-height: 95%;
+  transform: translate(-200%, -60%);
+}
+
+.pos:hover span.poscomment{
+  display:block;
+  width:170px;
+  min-width: 100%;
+  max-height: 95%;
+  transform: translate(-150%, -60%);
+}
+
+.snpsearch:hover span.snpsearchcomment{
+  display: block;
+  width: 200px;
+}
+
+.maxPPA:hover span.maxPPAcomment{
+  display: block;
+  min-width: 100%;
+  max-height: 95%;
+}
+
+.Genecomment::after, .Locusidcomment::after, .Signalidcomment::after, .validationcomment::after, .declinecomment::after, .DMcomment::after, .PPAcomment::after, .eQTLglocomment::after, .eQTLtubcomment::after, .REFcomment::after, .ALTcomment::after, .maxPPAcomment::after{ /* Arrows of the tooltip boxes */
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent grey transparent transparent;
+}
+.CADDscorecomment::after{ /* Arrows of the tooltip boxes */
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent grey;
+}
+
+.poscomment::after{ /* Arrows of the tooltip boxes */
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent grey;
+}
+
+th.hover:hover{
+  background-color: #e6e6e6;
+}
+
+/*wenn ich einzelne Table-header Cellen farbig machen m?chte, muss ich denen nur vorher class zuweisen 
+#GPSrows thead th.Geneofficial  {
+  background-color: red;
+}
+*/
+
+#GPS_rows thead th{
+  padding-bottom: 20px;
+}
+
+#CADD_gene th{
+  height: 75px;
+}
+
+.shiny-text-output{
+  padding-bottom: 4px;
+}
+
+#SNP-input-1 label{
+  font-weight: bold;
+}
+
+td[data-type="factor"]{
+    width: 80px !important;
+}
+#dm_stat_gene tr:nth-child(1) th:nth-child(3) {
+  border-right: 1px solid lightgray;
+}
+#dm_stat_gene tr:nth-child(1) th:nth-child(4) {
+  border-right: 1px solid lightgray;
+}
+#dm_stat_gene tr:nth-child(1) th:nth-child(5) {
+  border-right: 1px solid lightgray;
+}
+
+#dm_stat_gene tr:nth-child(2) th:nth-child(5) {
+  border-right: 1px solid lightgray;
+}
+
+#dm_stat_gene tr:nth-child(2) th:nth-child(10) {
+  border-right: 1px solid lightgray;
+}
+
+
+
+#dm_stat_gene td:nth-child(3),
+#dm_stat_gene td:nth-child(8),
+#dm_stat_gene td:nth-child(13) {
+  border-right: 1px solid lightgray;
+}
+
+
