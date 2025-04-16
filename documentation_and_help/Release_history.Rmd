@@ -38,3 +38,6 @@ KidneyGPS 1.1.0 [2022-03]- integration of eQTL data from Susztaklab
 
 first publication KidneyGPS 1.0 [2022-03]
 
+# GitHub
+
+You can access the source code of the kidney GPS via the [GenEpi Regensburg GitHub](https://github.com/genepi-regensburg/kidneyGPS).
