@@ -5,6 +5,12 @@ date: "Feb 15th 2025"
 output: html_document
 ---
 # Data Sources
+
+### GitHub
+The source code of the kidneyGPS is available under [GitHub](https://github.com/genepi-regensburg/kidneyGPS).
+
+---
+
 ### Association with eGFRcrea
 Genetic loci and genes within these loci are based on a [genome-wide association studies (GWAS)](https://www.ukbiobank.ac.uk/) meta-analysis for eGFRcrea of [UK Biobank data](https://www.ukbiobank.ac.uk/) and [CKDGen consortium](https://ckdgen.imbi.uni-freiburg.de) data **(n=1,201,909).**  Detailed information on the selection process can be found  [here](https://www.nature.com/articles/s41467-021-24491-0). A GWAS meta-analysis restricted to individuals of European ancestry (**n=1,004,040**) was used to identify independent association signals and to calculate posterior probabilities of association (**PPA**) for all variants in each signal. The **99% credible set** of variants contains the causal variant with 99% probability, under the assumption that there is one causal variant per association signal and that this variant is included in the analysis.
 
