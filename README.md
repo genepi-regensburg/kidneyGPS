@@ -35,4 +35,4 @@ Release History
 If you are using the app, please cite [Stanzick et al. Nat Commun 2021](https://pubmed.ncbi.nlm.nih.gov/34272381/).
 
 ## Contact
-Please contact iris.heid _(at)_ klinik _(dot)_ uni-regensburg _(dot)_ de if you need assistance.
+Please contact mathias _(dot)_ gorski _(at)_ klinik _(dot)_ uni-regensburg _(dot)_ de if you need assistance.
