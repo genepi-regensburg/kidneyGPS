@@ -8,8 +8,10 @@ The KidneyGPS is available at https://kidneygps.ur.de/gps/. It summarizes inform
 ## Dependencies
 KidneyGPS depends on the following other R packages: data.table, shiny, shinyBS, DT, shinyjs, shinyWidgets, htmltools
 Release History
+- **Version 2.4.1** (current version)  
+  Added modulariszation of interfaces
 
-- **Version 2.4** (current version)  
+- Version 2.4 
   Integration nephQTL v2 and decline information from Wiegrebe et al.
   
 - Version 2.3
